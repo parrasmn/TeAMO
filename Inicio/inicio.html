@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi amor</title>
+    <link rel="stylesheet" href="appearence.css">
+</head>
+
+<body>
+    <main class="scene">
+
+        <!-- Título de la pantalla inicial -->
+        <h5 id="analisis">
+            Analisis de Relación
+        </h5>
+
+        <!-- Botón que inicia la animación -->
+        <button id="botonInicio" class="start-button">
+            Iniciar
+        </button>
+
+        <!-- Recomendación para celular -->
+        <h6 id="horizontal">
+            Recomendacion: Ponga el celular en horizontal para una mejor experiencia
+        </h6>
+
+        <!--ELEMENTOS QUE APARECEN DESPUÉS DE PRESIONAR "INICIAR"-->
+        <h1 id="h1" class="inicio" style="display: none;">
+            Cargando...
+        </h1>
+        <h2 id="h2" class="inicio" style="display: none;">
+            Buscando con C14...
+        </h2>
+
+        <h3 id="h3" style="display: none;">
+            Edad encontrada:
+        </h3>
+
+<h4 id="h4" style="display: none;">
+    1 año
+</h4>
+
+        <!-- Sol que aparece al terminar la introducción -->
+        <div class="sol" id="sol" style="display: none;">
+            <img
+                id="sol-img"
+                src="sol.png"
+                alt="Sol"
+            >
+        </div>
+
+        <!-- Botón que posteriormente llevará al video de YouTube -->
+        <button style="display: none;"
+            id="Button"
+            class="play-button"
+            data-href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        </button>
+
+        <!-- Música -->
+        <audio
+            id="audioInicio"
+            controls
+            preload="auto"
+            style="display: none"
+        >
+            <source src="sonido.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
