@@ -1,0 +1,74 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi amor</title>
+    <link rel="stylesheet" href="appearence.css">
+</head>
+
+<body>
+
+    <!--
+        ESCENA PRINCIPAL
+        El CSS mantendrá este espacio en formato 16:9.
+        Todos los elementos visuales estarán dentro de él.
+    -->
+    <div class="scene">
+
+        <!-- Pantalla inicial -->
+        <h5 id="analisis">ANÁLISIS DE RELACIÓN</h5>
+
+        <button id="botonInicio" class="start-button">
+            Iniciar
+        </button>
+
+        <h6 id="horizontal">
+            Recomendación: Ponga el celular en horizontal para una mejor experiencia
+        </h6>
+
+        <!-- Secuencia de carga -->
+        <h1 id="h1" class="inicio" style="display: none">
+            Cargando...
+        </h1>
+
+        <h2 id="h2" class="inicio" style="display: none">
+            Buscando con C14...
+        </h2>
+
+        <h3 id="h3" style="display: none">
+            Edad encontrada:
+        </h3>
+
+        <h4 id="h4" style="display: none">
+            1 año
+        </h4>
+
+        <!-- Sol giratorio -->
+        <div class="sol" id="sol" style="display: none">
+            <img id="sol-img" src="sol.png" alt="Sol decorativo">
+        </div>
+
+        <!-- Botón que abre el vídeo -->
+        <button
+            id="Button"
+            class="play-button"
+            data-href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            aria-label="Ver nuestro vídeo"
+            style="display: none">
+        </button>
+
+        <!-- Música de fondo -->
+        <audio id="audioInicio" preload="auto" style="display: none">
+            <source src="sonido.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
