@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
 }
 
 .scene {
@@ -56,6 +58,7 @@ body {
     transform: translate(-50%, -50%) scale(0.98);
 }
 
+/* Texto superior */
 h5 {
     position: absolute;
     top: 10%;
@@ -70,10 +73,10 @@ h5 {
     letter-spacing: 4px;
     text-align: center;
     text-transform: uppercase;
-    white-space: normal;
     line-height: 1.2;
 }
 
+/* Texto de análisis */
 .inicio {
     position: absolute;
     left: 50%;
@@ -89,6 +92,8 @@ h1 {
     color: #ffffff;
     font-family: "Courier New", monospace;
     font-size: clamp(25px, 4vw, 48px);
+    font-weight: 400;
+    letter-spacing: 2px;
     margin: 0;
     line-height: 1.2;
 }
@@ -98,9 +103,11 @@ h2 {
     color: rgb(224, 53, 68);
     font-family: "Courier New", monospace;
     font-size: clamp(20px, 3.5vw, 42px);
+    font-weight: 400;
+    letter-spacing: 1px;
     margin: 0;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.25;
     overflow-wrap: anywhere;
 }
 
@@ -113,9 +120,11 @@ h3 {
     width: 94%;
     font-family: "Courier New", monospace;
     font-size: clamp(15px, 2vw, 24px);
+    font-weight: 400;
+    letter-spacing: 1px;
     text-align: center;
-    color: rgb(224, 30, 60);
-    line-height: 1.3;
+    color: rgb(224, 53, 68);
+    line-height: 1.4;
 }
 
 h4 {
@@ -126,12 +135,24 @@ h4 {
     margin: 0;
     width: 94%;
     font-size: clamp(20px, 6vw, 28px);
+    font-weight: 400;
+    letter-spacing: 1px;
     text-align: center;
     color: #ffffff;
     font-family: "Courier New", monospace;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
+/* Destacar únicamente "UN AÑO"
+   Añade class="un-anio" al elemento o frase correspondiente */
+.un-anio {
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.22);
+}
+
+/* Botón de reproducción */
 .play-button {
     position: absolute;
     width: 6%;
@@ -140,8 +161,8 @@ h4 {
     min-height: 38px;
     max-width: 76px;
     max-height: 60px;
-    background: #ff0000;
-    border-radius: 20%;
+    background: #e03544;
+    border-radius: 12px;
     z-index: 1000;
     pointer-events: auto;
     border: none;
@@ -150,6 +171,12 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+    background: #f04454;
+    transform: translate(-50%, -50%) scale(1.04);
 }
 
 .play-button::before {
@@ -165,6 +192,7 @@ h4 {
     border-left: 20px solid white;
 }
 
+/* Imagen del sol */
 .sol {
     position: absolute;
     top: 55%;
@@ -203,17 +231,23 @@ h4 {
         width: 94%;
         font-size: clamp(18px, 6vw, 28px);
         letter-spacing: 1px;
-        overflow-wrap: anywhere;
+        line-height: 1.3;
     }
 
     h3 {
         top: 35%;
         font-size: clamp(13px, 4vw, 19px);
+        line-height: 1.4;
     }
 
     h4 {
         top: 43%;
         font-size: clamp(20px, 6vw, 28px);
+        line-height: 1.3;
+    }
+
+    .un-anio {
+        letter-spacing: 2px;
     }
 
     .play-button {
@@ -239,8 +273,14 @@ h4 {
         width: 88%;
         font-size: clamp(18px, 5vw, 26px);
         letter-spacing: 2px;
-        white-space: normal;
-        line-height: 1.2;
+        line-height: 1.3;
     }
+}
 
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
 }
