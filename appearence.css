@@ -234,17 +234,21 @@ h4 {
     }
 
     .play-button {
-        top: 53%;
-        width: 58px;
-        height: 46px;
-        min-width: 58px;
-        min-height: 46px;
+        top: 54%;
+        left: 50%;
+        width: 52px;
+        height: 42px;
+        min-width: 52px;
+        min-height: 42px;
+        border-radius: 12px;
     }
 
     .sol {
-        top: 63%;
+        top: 66%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 25%;
-        max-width: 110px;
+        max-width: 100px;
     }
 
     h5 {
