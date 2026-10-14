@@ -74,23 +74,6 @@ h5 {
     line-height: 1.2;
 }
 
-h6 {
-    position: absolute;
-    bottom: 9%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.55);
-    font-family: "Courier New", monospace;
-    font-size: clamp(10px, 1vw, 15px);
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-align: center;
-    white-space: normal;
-    line-height: 1.5;
-}
-
 .inicio {
     position: absolute;
     left: 50%;
