@@ -170,7 +170,7 @@ h4 {
     top: 55%;
     left: 50%;
     transform: translateX(-50%);
-    width: 10%;
+    width: 15%;
     max-width: 140px;
     z-index: 1;
 }
@@ -230,7 +230,7 @@ h4 {
         top: 66%;
         left: 50%;
         transform: translateX(-50%);
-        width: 25%;
+        width: 30%;
         max-width: 100px;
     }
 
